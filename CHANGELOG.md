@@ -2,7 +2,7 @@
 
 All Notable changes to `Basic Value Objects` will be documented in this file
 
-## NEXT - 2015-02-10
+## NEXT - YYYY-MM-DD
 
 ### Added
 - Nothing

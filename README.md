@@ -51,7 +51,12 @@ class CrewMember
     }
 }
 
-$person = new CrewMember(new String('Malcolm'), new String('Reynolds'), new Integer(49), Boolean::TRUE());
+$person = new CrewMember(
+    new String('Malcolm'),
+    new String('Reynolds'),
+    new Integer(49),
+    Boolean::TRUE()
+);
 ```
 
 If you don't want the fields on the object to hold the instances but want the type-hinting,
@@ -84,7 +89,12 @@ class CrewMember
     }
 }
 
-$person = new CrewMember(new String('River'), new String('Tam'), new Integer('28'), Boolean::FALSE());
+$person = new CrewMember(
+    new String('River'),
+    new String('Tam'),
+    new Integer('28'),
+    Boolean::FALSE()
+);
 ```
 
 Demonstration of how to work with the value objects:
