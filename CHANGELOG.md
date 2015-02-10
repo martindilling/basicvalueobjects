@@ -1,8 +1,8 @@
 # Changelog
 
-All Notable changes to `:package_name` will be documented in this file
+All Notable changes to `Basic Value Objects` will be documented in this file
 
-## NEXT - YYYY-MM-DD
+## NEXT - 2015-02-10
 
 ### Added
 - Nothing
@@ -18,3 +18,9 @@ All Notable changes to `:package_name` will be documented in this file
 
 ### Security
 - Nothing
+
+## Initial - 2015-02-10
+
+### Added
+- Value objects for String, Integer and Boolean
+
