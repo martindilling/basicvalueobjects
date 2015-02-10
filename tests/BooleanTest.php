@@ -1,4 +1,6 @@
 <?php namespace BasicValueObjects\Tests;
+
+use BasicValueObjects\ValueObject;
 use BasicValueObjects\Boolean;
 
 /**
@@ -78,9 +80,11 @@ class BooleanTest extends \PHPUnit_Framework_TestCase
         $boolean1 = new Boolean(true);
         $boolean2 = new Boolean(true);
         $boolean3 = new Boolean(false);
+        $mock = $this->getMock(ValueObject::class);
 
         $this->assertTrue($boolean1->equals($boolean2));
         $this->assertFalse($boolean1->equals($boolean3));
         $this->assertFalse($boolean2->equals($boolean3));
+        $this->assertFalse($boolean1->equals($mock));
     }
 }

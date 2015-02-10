@@ -1,5 +1,6 @@
 <?php namespace BasicValueObjects\Tests;
 
+use BasicValueObjects\ValueObject;
 use BasicValueObjects\String;
 
 /**
@@ -55,10 +56,12 @@ class StringTest extends \PHPUnit_Framework_TestCase
         $string1 = new String('Some text');
         $string2 = new String('Some text');
         $string3 = new String('Some other text');
+        $mock = $this->getMock(ValueObject::class);
 
         $this->assertTrue($string1->equals($string2));
         $this->assertFalse($string1->equals($string3));
         $this->assertFalse($string2->equals($string3));
+        $this->assertFalse($string1->equals($mock));
     }
 
     /** @test */

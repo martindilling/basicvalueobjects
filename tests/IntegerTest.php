@@ -1,5 +1,6 @@
 <?php namespace BasicValueObjects\Tests;
 
+use BasicValueObjects\ValueObject;
 use BasicValueObjects\Integer;
 
 /**
@@ -55,9 +56,11 @@ class IntegerTest extends \PHPUnit_Framework_TestCase
         $integer1 = new Integer(111);
         $integer2 = new Integer(111);
         $integer3 = new Integer(222);
+        $mock = $this->getMock(ValueObject::class);
 
         $this->assertTrue($integer1->equals($integer2));
         $this->assertFalse($integer1->equals($integer3));
         $this->assertFalse($integer2->equals($integer3));
+        $this->assertFalse($integer1->equals($mock));
     }
 }
