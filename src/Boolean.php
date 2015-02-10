@@ -12,7 +12,7 @@ class Boolean implements ValueObject
     const FALSE = false;
 
     /**
-     * @var string
+     * @var bool
      */
     private $value;
 
