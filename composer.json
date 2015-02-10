@@ -1,0 +1,40 @@
+{
+    "name": "mdh/valueobjects",
+    "description": "A collection of value objects.",
+    "keywords": [
+        "mdh",
+        "valueobjects"
+    ],
+    "homepage": "https://github.com/thephpmdh/valueobjects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Dilling-Hansen",
+            "email": "martindilling@gmail.com",
+            "homepage": "http://martindilling.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mdh\\ValueObjects\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mdh\\ValueObjects\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
