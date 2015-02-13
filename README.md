@@ -12,6 +12,8 @@ A small collection of the most basic value objects. These can help make your cod
 
 ## Install
 
+All the available versions is visible [on Packagist](https://packagist.org/packages/martindilling/basicvalueobjects).
+
 Via Composer
 
 ``` bash
