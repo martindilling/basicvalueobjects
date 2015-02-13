@@ -11,7 +11,7 @@ All Notable changes to `Basic Value Objects` will be documented in this file
 - Nothing
 
 ### Fixed
-- ´Boolean::TRUE()´ and ´Boolean::FALSE()´ are now ´Boolean::true()´ and ´Boolean::false()´
+- `Boolean::TRUE()` and `Boolean::FALSE()` are now `Boolean::true()` and `Boolean::false()`.
 
 ### Removed
 - Nothing
