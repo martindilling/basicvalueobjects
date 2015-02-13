@@ -55,7 +55,7 @@ $person = new CrewMember(
     new String('Malcolm'),
     new String('Reynolds'),
     new Integer(49),
-    Boolean::TRUE()
+    Boolean::true()
 );
 ```
 
@@ -93,7 +93,7 @@ $person = new CrewMember(
     new String('River'),
     new String('Tam'),
     new Integer('28'),
-    Boolean::FALSE()
+    Boolean::false()
 );
 ```
 
@@ -118,7 +118,7 @@ $integer1->equals($integer2);  // (bool) false
 // Boolean
 $boolean1 = new Boolean(true);
 $boolean2 = new Boolean(Boolean::TRUE);
-$boolean3 = Boolean::FALSE();
+$boolean3 = Boolean::false();
 
 $boolean1->native();           // (bool) true
 $boolean2->__toString();       // (string) true
