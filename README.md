@@ -6,6 +6,7 @@
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/martindilling/basicvalueobjects.svg?style=flat-square)](https://scrutinizer-ci.com/g/martindilling/basicvalueobjects/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/martindilling/basicvalueobjects.svg?style=flat-square)](https://scrutinizer-ci.com/g/martindilling/basicvalueobjects)
 [![Total Downloads](https://img.shields.io/packagist/dt/martindilling/basicvalueobjects.svg?style=flat-square)](https://packagist.org/packages/martindilling/basicvalueobjects)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/7052fa34-c673-4b06-9c76-3a7d6ded7db9.svg?style=flat-square)](https://insight.sensiolabs.com/projects/7052fa34-c673-4b06-9c76-3a7d6ded7db9)
 
 A small collection of the most basic value objects. These can help make your code more expressive, and save some manual validation.
 
