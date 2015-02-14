@@ -33,7 +33,7 @@ class Boolean implements ValueObject
     /**
      * @return static
      */
-    public static function TRUE()
+    public static function true()
     {
         return new static(true);
     }
@@ -41,7 +41,7 @@ class Boolean implements ValueObject
     /**
      * @return static
      */
-    public static function FALSE()
+    public static function false()
     {
         return new static(false);
     }
