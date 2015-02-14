@@ -5,7 +5,7 @@ All Notable changes to `Basic Value Objects` will be documented in this file
 ## NEXT - YYYY-MM-DD
 
 ### Added
-- Nothing
+- `Float` value object
 
 ### Deprecated
 - Nothing
