@@ -55,6 +55,14 @@ class BooleanTest extends \PHPUnit_Framework_TestCase
     }
 
     /** @test */
+    public function should_return_value_as_bool()
+    {
+        $boolean  = new Boolean(true);
+
+        $this->assertTrue(is_bool($boolean->native()));
+    }
+
+    /** @test */
     public function can_construct_with_static_calls()
     {
         $booleanTrue  = Boolean::TRUE();

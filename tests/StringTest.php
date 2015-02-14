@@ -51,6 +51,14 @@ class StringTest extends \PHPUnit_Framework_TestCase
     }
 
     /** @test */
+    public function should_return_value_as_string()
+    {
+        $string = new String('Some text');
+
+        $this->assertTrue(is_string($string->native()));
+    }
+
+    /** @test */
     public function should_compare_equality()
     {
         $string1 = new String('Some text');

@@ -51,6 +51,14 @@ class IntegerTest extends \PHPUnit_Framework_TestCase
     }
 
     /** @test */
+    public function should_return_value_as_integer()
+    {
+        $integer = new Integer(123);
+
+        $this->assertTrue(is_integer($integer->native()));
+    }
+
+    /** @test */
     public function should_compare_equality()
     {
         $integer1 = new Integer(111);
