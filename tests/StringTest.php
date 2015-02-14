@@ -81,4 +81,13 @@ class StringTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($string1->isEmpty());
         $this->assertFalse($string2->isEmpty());
     }
+
+    /** @test */
+    public function can_construct_from_string()
+    {
+        $string = String::fromString('Some text');
+
+        $this->assertEquals('Some text', $string->native());
+        $this->assertEquals('Some text', $string->toString());
+    }
 }

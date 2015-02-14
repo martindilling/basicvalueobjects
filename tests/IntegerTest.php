@@ -71,4 +71,13 @@ class IntegerTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($integer2->equals($integer3));
         $this->assertFalse($integer1->equals($mock));
     }
+
+    /** @test */
+    public function can_construct_from_string()
+    {
+        $integer = Integer::fromString('123');
+
+        $this->assertEquals(123, $integer->native());
+        $this->assertEquals('123', $integer->toString());
+    }
 }

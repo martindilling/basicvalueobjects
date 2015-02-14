@@ -95,4 +95,13 @@ class BooleanTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($boolean2->equals($boolean3));
         $this->assertFalse($boolean1->equals($mock));
     }
+
+    /** @test */
+    public function can_construct_from_string()
+    {
+        $boolean = Boolean::fromString('true');
+
+        $this->assertEquals(true, $boolean->native());
+        $this->assertEquals('true', $boolean->toString());
+    }
 }

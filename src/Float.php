@@ -6,7 +6,7 @@ use InvalidArgumentException;
  * @author Martin Dilling-Hansen <martindilling@gmail.com>
  * @date   2015-02-14
  */
-class Float implements ValueObject
+class Float implements ValueObject, Stringable
 {
     /**
      * @var float
@@ -21,7 +21,7 @@ class Float implements ValueObject
     public function __construct($value)
     {
         if (!is_float($value) && !is_integer($value)) {
-            throw new InvalidArgumentException('Provided argument [' . $value . '] is not valid!');
+            throw new InvalidArgumentException('Provided argument [' . $value . '] is not a valid float!');
         }
 
         $this->value = (float) $value;
@@ -55,5 +55,22 @@ class Float implements ValueObject
     public function __toString()
     {
         return (string) $this->value;
+    }
+
+    /**
+     * @return string
+     */
+    public function toString()
+    {
+        return $this->__toString();
+    }
+
+    /**
+     * @param string $value
+     * @return static
+     */
+    public static function fromString($value)
+    {
+        return new static((float) $value);
     }
 }

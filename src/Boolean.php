@@ -6,7 +6,7 @@ use InvalidArgumentException;
  * @author Martin Dilling-Hansen <martindilling@gmail.com>
  * @date   2015-02-10
  */
-class Boolean implements ValueObject
+class Boolean implements ValueObject,Stringable
 {
     const TRUE  = true;
     const FALSE = false;
@@ -24,7 +24,7 @@ class Boolean implements ValueObject
     public function __construct($value)
     {
         if (!is_bool($value)) {
-            throw new InvalidArgumentException('Provided argument [' . $value . '] is not valid!');
+            throw new InvalidArgumentException('Provided argument [' . $value . '] is not a valid boolean!');
         }
 
         $this->value = (bool) $value;
@@ -73,6 +73,23 @@ class Boolean implements ValueObject
      */
     public function __toString()
     {
-        return $this->value ? 'true' : 'false';
+        return (string) ($this->value ? 'true' : 'false');
+    }
+
+    /**
+     * @return string
+     */
+    public function toString()
+    {
+        return $this->__toString();
+    }
+
+    /**
+     * @param string $value
+     * @return static
+     */
+    public static function fromString($value)
+    {
+        return new static((bool) $value);
     }
 }

@@ -6,7 +6,7 @@ use InvalidArgumentException;
  * @author Martin Dilling-Hansen <martindilling@gmail.com>
  * @date   2015-02-10
  */
-class String implements ValueObject, canBeEmpty
+class String implements ValueObject, CanBeEmpty, Stringable
 {
     /**
      * @var string
@@ -20,7 +20,7 @@ class String implements ValueObject, canBeEmpty
     public function __construct($value)
     {
         if (!is_string($value)) {
-            throw new InvalidArgumentException('Provided argument [' . $value . '] is not valid!');
+            throw new InvalidArgumentException('Provided argument [' . $value . '] is not a valid string!');
         }
 
         $this->value = (string) $value;
@@ -49,6 +49,14 @@ class String implements ValueObject, canBeEmpty
     }
 
     /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string) $this->value;
+    }
+
+    /**
      * @return bool
      */
     public function isEmpty()
@@ -59,8 +67,17 @@ class String implements ValueObject, canBeEmpty
     /**
      * @return string
      */
-    public function __toString()
+    public function toString()
     {
-        return (string) $this->value;
+        return $this->__toString();
+    }
+
+    /**
+     * @param string $value
+     * @return static
+     */
+    public static function fromString($value)
+    {
+        return new static((string) $value);
     }
 }

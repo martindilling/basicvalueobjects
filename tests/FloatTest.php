@@ -81,4 +81,13 @@ class FloatTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($float2->equals($float3));
         $this->assertFalse($float1->equals($mock));
     }
+
+    /** @test */
+    public function can_construct_from_string()
+    {
+        $float = Float::fromString('123.45');
+
+        $this->assertEquals(123.45, $float->native());
+        $this->assertEquals('123.45', $float->toString());
+    }
 }

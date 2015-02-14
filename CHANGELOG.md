@@ -5,7 +5,7 @@ All Notable changes to `Basic Value Objects` will be documented in this file
 ## NEXT - YYYY-MM-DD
 
 ### Added
-- Nothing
+- Stringable interface. Static `fromString()` method and `toString()` method
 
 ### Deprecated
 - Nothing
