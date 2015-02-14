@@ -2,7 +2,7 @@
     "name": "martindilling/basicvalueobjects",
     "description": "A collection of basic value objects.",
     "keywords": [
-        "DDD", "Value Objects", "String", "Integer", "Boolean"
+        "Value Objects", "DDD", "String", "Integer", "Float", "Boolean"
     ],
     "homepage": "https://github.com/martindilling/basicvalueobjects",
     "license": "MIT",
