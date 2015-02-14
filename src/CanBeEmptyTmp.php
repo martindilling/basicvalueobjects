@@ -4,7 +4,7 @@
  * @author Martin Dilling-Hansen <martindilling@gmail.com>
  * @date   2015-02-10
  */
-interface canBeEmpty
+interface CanBeEmpty
 {
     /**
      * @return bool
